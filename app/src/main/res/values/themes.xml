@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ReshmeNammaPride" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style
+        name="Theme.ReshmeNammaPride.Splash"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/splash_green</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.ReshmeNammaPride</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,29 @@
+# Local config
+local.properties
+
+# Signing keys
+*.jks
+*.keystore
+
+# Gradle
+.gradle/
+
+# IDE
+.idea/
+
+# Build folders
+/build
+app/build/
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Captures
+captures/
