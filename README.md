@@ -1,260 +1,250 @@
-\# Reshme Namma Pride
+# 🐛 Reshme Namma Pride
+### 🌱 AI-Powered Silkworm Farming Assistant
 
+> Smart sericulture management using Android, AI, and climate analytics.
 
+---
 
-AI-powered silkworm farming assistant built using Android, Jetpack Compose, Room Database, and Google Gemini AI.
+## 📌 Overview
 
+**Reshme Namma Pride** is an AI-powered Android application designed to help silkworm farmers monitor climate conditions, manage silkworm batches, and improve cocoon yield using intelligent farming recommendations.
 
+The application combines:
 
-\## Overview
+- 📱 Modern Android development
+- 🤖 Google Gemini AI
+- 🌡️ Climate trend analysis
+- 🗄️ Local database management
+- 📊 Smart farming insights
 
+to provide a complete digital assistant for sericulture farming.
 
+---
 
-Reshme Namma Pride helps silkworm farmers monitor climate conditions, manage silkworm batches, and receive AI-generated farming recommendations to improve cocoon quality and silk yield.
+# ✨ Features
 
+## 🐛 Batch Management
+- Create and manage silkworm batches
+- Store breed details and batch history
+- Track batch growth lifecycle
 
+## 🌡️ Climate Monitoring
+- Record temperature and humidity
+- Maintain climate history logs
+- Detect unstable climate conditions
 
-The application stores temperature and humidity records locally, analyzes trends, and uses Google Gemini AI to generate practical farming advice.
+## 🤖 AI Farming Advisor
+- AI-powered climate analysis
+- Growth optimization suggestions
+- Humidity and temperature recommendations
+- Smart farming insights using Google Gemini AI
 
+## 📊 Climate Data Processing
+- Average climate analysis
+- Trend detection
+- Stability analysis
+- Risk condition detection
 
+## 🎨 Modern Android UI
+- Built fully with Jetpack Compose
+- Material 3 design
+- Smooth navigation flow
+- Animated welcome screen
+- Clean farming-themed interface
 
-\---
+---
 
+# 🏗️ System Architecture
 
+![Architecture](assets/architecture.png)
 
-\## Features
+---
 
+# ⚙️ Tech Stack
 
+## 📱 Android Development
+- Kotlin
+- Jetpack Compose
+- Navigation Compose
+- Material 3
+- Coroutines
 
-\### Batch Management
+## 🧠 Architecture
+- MVVM Architecture
+- Repository Pattern
+- StateFlow
+- ViewModel
 
-\- Create and manage multiple silkworm batches
+## 🗄️ Database
+- Room Database
+- DAO Pattern
+- SQLite
 
-\- Persistent local storage using Room Database
+## 🌐 Networking
+- Retrofit
+- OkHttp
+- Kotlinx Serialization
 
-\- Batch dashboard with climate history
+## 🤖 AI Integration
+- Google Gemini API
+- Gemini 2.0 Flash
+- Prompt Engineering
+- Climate Data Preprocessing
 
+## 🛠️ Tools
+- Android Studio
+- Git
+- GitHub
+- Gradle
 
+---
 
-\### Climate Monitoring
-
-\- Record:
-
-&#x20; - Temperature
-
-&#x20; - Humidity
-
-\- View climate history for each batch
-
-\- Climate stability analysis
-
-
-
-\### AI Farming Advisor
-
-\- Climate trend preprocessing
-
-\- Average/min/max analysis
-
-\- Instability detection
-
-\- Google Gemini AI integration
-
-\- AI-generated recommendations for:
-
-&#x20; - Growth improvement
-
-&#x20; - Humidity management
-
-&#x20; - Temperature correction
-
-&#x20; - Silk quality improvement
-
-
-
-\### Modern Android UI
-
-\- Built fully with Jetpack Compose
-
-\- Custom splash screen
-
-\- Welcome screen
-
-\- Material 3 design
-
-\- Responsive UI
-
-
-
-\---
-
-
-
-\## Tech Stack
-
-
-
-\### Android
-
-\- Kotlin
-
-\- Jetpack Compose
-
-\- Navigation Compose
-
-\- ViewModel
-
-\- Coroutines
-
-
-
-\### Database
-
-\- Room Database
-
-\- DAO Architecture
-
-\- StateFlow
-
-
-
-\### Networking
-
-\- Retrofit
-
-\- OkHttp
-
-\- Kotlinx Serialization
-
-
-
-\### AI
-
-\- Google Gemini API
-
-\- Gemini 2.0 Flash
-
-
-
-\---
-
-
-
-\## Project Structure
-
-
+# 📂 Project Structure
 
 ```text
-
 app/
+ ├── ai/
+ │    ├── dto/
+ │    ├── preprocessing/
+ │    └── service/
+ │
+ ├── database/
+ │    ├── dao/
+ │    └── entity/
+ │
+ ├── model/
+ ├── navigation/
+ ├── repository/
+ ├── ui/
+ │    ├── screens/
+ │    └── theme/
+ │
+ ├── viewmodel/
+ └── MainActivity.kt
+```
 
-&#x20;├── ai/
+---
 
-&#x20;├── database/
+# 🔄 AI Workflow
 
-&#x20;├── navigation/
+```text
+Farmer Climate Entries
+          ↓
+Climate Preprocessing
+          ↓
+Average + Trend Analysis
+          ↓
+Prompt Builder
+          ↓
+Google Gemini AI
+          ↓
+Smart Farming Recommendations
+```
 
-&#x20;├── repository/
+---
 
-&#x20;├── ui/
+# 📸 Screenshots
 
-&#x20;├── viewmodel/
+## 🌿 Welcome Screen
+![Welcome Screen](screenshots/welcome_screen.png)
 
-&#x20;└── model/
+---
 
+## 🏠 Home Screen
+![Home Screen](screenshots/home_screen.png)
 
+---
 
-\##Screens
+## 📊 Dashboard
+![Dashboard](screenshots/dashboard_screen.png)
 
-Welcome Screen
+---
 
-Home Screen
+## 🤖 AI Analysis
+![AI Analysis](screenshots/ai_analysis.png)
 
-New Batch Screen
+---
 
-Dashboard Screen
+# 🚀 Setup Instructions
 
-AI Analysis Panel
+## 1️⃣ Clone Repository
 
-
-
-
-
-\##Setup
-
-1\. Clone Repository
-
+```bash
 git clone https://github.com/ashxk024/ReshmeNammaPride.git
+```
 
+---
 
-
-2\. Open in Android Studio
+## 2️⃣ Open in Android Studio
 
 Open the project folder in Android Studio.
 
+---
 
+## 3️⃣ Add Gemini API Key
 
-3\. Add Gemini API Key
+Create/Edit:
 
-
-
-Create or edit:
-
-
-
+```text
 local.properties
-
-
+```
 
 Add:
 
-GEMINI\_API\_KEY=YOUR\_API\_KEY\_HERE
+```properties
+GEMINI_API_KEY=YOUR_API_KEY_HERE
+```
 
+---
 
+## 4️⃣ Sync Gradle
 
-4\. Sync Gradle
-
+```text
 File → Sync Project with Gradle Files
+```
 
+---
 
+## 5️⃣ Run Application
 
-5\. Run App
+Connect an Android device/emulator and run the app.
 
-Connect device/emulator and run the project.
+---
 
+# 🎯 Future Improvements
 
+- ☁️ Firebase cloud synchronization
+- 📡 IoT sensor integration
+- 🌍 Multi-language farmer support
+- 📈 Advanced analytics dashboard
+- 📄 PDF report generation
+- 🔔 Smart climate alerts
+- 🛰️ Real-time weather integration
 
-\##Future Improvements
+---
 
-Firebase cloud sync
+# 💡 Problem Statement
 
-IoT sensor integration
+Traditional silkworm farming often depends on manual climate monitoring and farmer experience, which can lead to inconsistent cocoon quality and reduced silk production.
 
-Real-time climate monitoring
+This project aims to digitize and modernize sericulture farming using AI-driven climate analysis and smart recommendations.
 
-Multi-language support
+---
 
-PDF report export
+# 👨‍💻 Author
 
-Farmer analytics dashboard
+### Ashok
 
-Offline AI caching
+Android Developer | AI Enthusiast | Smart Agriculture Explorer
 
+---
 
+# ⭐ If you like this project
 
+Give this repository a ⭐ on GitHub!
 
+---
 
-\##License
+# 📜 License
 
-
-
-This project is for educational and research purposes.
-
-
-
-
-
-
-
-
-
+This project is developed for educational and research purposes.
